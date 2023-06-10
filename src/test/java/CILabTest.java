@@ -20,12 +20,17 @@ public class CILabTest {
 
     @Test
     public void detectCapitalUseTest1() {
-       fail("Not yet implemented");
+        myString.setString("USA");
+        boolean isCapitalUsageCorrect = myString.detectCapitalUse();
+        assertTrue(isCapitalUsageCorrect);
+
 
     }
     @Test
     public void detectCapitalUseTest2() {
-        fail("Not yet implemented");
+        myString.setString("leetCode");
+        boolean isCapitalUsageCorrect = myString.detectCapitalUse();
+        assertFalse(isCapitalUsageCorrect);
     }
 
 
